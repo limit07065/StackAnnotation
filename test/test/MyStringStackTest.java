@@ -59,7 +59,7 @@ public class MyStringStackTest extends TestCase {
 		}catch (NoSuchElementException e) {
 			fail("Falied pop - No Elements");
 		}
-		assertSame (s1,o1);
+		assertSame (s1+"fake",o1);
 		assertTrue ("Stack should be empty after popping all elements", stack.isEmpty());
 		//assertTrue ( stack.isEmpty());
 	}
