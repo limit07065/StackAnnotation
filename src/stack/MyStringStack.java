@@ -18,9 +18,9 @@ import java.util.Vector;
  * @since JDK 1.5
  */
 public class MyStringStack {
-    private Vector<String> v = new Vector<String> ();
+    private Vector<String> v;// = new Vector<String> ();
     public void push (String newElement) {
-        if (newElement == null) v.add (newElement);
+        if (newElement != null) v.add (newElement);
     }
 
 /**
